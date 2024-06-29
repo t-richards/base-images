@@ -1,0 +1,19 @@
+name: Packer Format Check
+
+on: [push]
+
+jobs:
+  format-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup packer
+        uses: hashicorp/setup-packer@main
+        with:
+          version: 1.11.0
+
+      - name: Validate Packer HCL files
+        run: packer fmt -check -recursive .

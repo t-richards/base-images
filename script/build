@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+cd tailscale-raspios
+packer init .
+PACKER_CONFIG_DIR=$HOME sudo -E packer build .
