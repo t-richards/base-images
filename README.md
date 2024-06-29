@@ -9,8 +9,16 @@ This repository contains Packer templates for building Tom's custom OS images.
 
 ## Getting started
 
-```bash
-./script/build
+```sh-session
+# Build images.
+$ ./script/build
+
+<snip>
+
+==> Wait completed after 7 minutes 28 seconds
+
+==> Builds finished. The artifacts of successful builds are:
+--> tailscale-raspios.arm-image.raspios: tailscale-raspios.img
 ```
 
 ## Notes
