@@ -52,6 +52,9 @@ build {
     ]
   }
 
+  # TODO(tom): Install prometheus-node-exporter?
+  # https://packages.debian.org/bookworm/prometheus-node-exporter
+
   # enable automatic upgrades.
   # https://wiki.debian.org/UnattendedUpgrades
   provisioner "shell" {
