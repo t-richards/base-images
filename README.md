@@ -15,7 +15,7 @@ $ ./script/build
 
 <snip>
 
-==> Wait completed after 7 minutes 28 seconds
+==> Wait completed after 3 minutes 32 seconds
 
 ==> Builds finished. The artifacts of successful builds are:
 --> tailscale-raspios.arm-image.raspios: tailscale-raspios.img
