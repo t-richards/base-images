@@ -18,8 +18,8 @@ data "http" "github-keys" {
 # https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit
 # https://downloads.raspberrypi.com/raspios_lite_arm64/images/
 source "arm-image" "raspios" {
-  iso_url          = "https://downloads.raspberrypi.com/raspios_lite_arm64/images/raspios_lite_arm64-2024-10-28/2024-10-22-raspios-bookworm-arm64-lite.img.xz"
-  iso_checksum     = "sha256:24bf4ded19372c6ae8a2633a207cd861c86237b533778fc8a04242c53fcbcbd4"
+  iso_url          = "https://downloads.raspberrypi.com/raspios_lite_arm64/images/raspios_lite_arm64-2025-05-13/2025-05-13-raspios-bookworm-arm64-lite.img.xz"
+  iso_checksum     = "sha256:62d025b9bc7ca0e1facfec74ae56ac13978b6745c58177f081d39fbb8041ed45"
   output_filename  = "tailscale-raspios.img"
   qemu_binary      = "/usr/bin/qemu-aarch64-static"
   disable_embedded = true

@@ -27,4 +27,4 @@ $ ./script/build
 
 ## License
 
-Copyright (c) 2024 Tom Richards. All rights reserved.
+Copyright (c) 2025 Tom Richards. All rights reserved.
