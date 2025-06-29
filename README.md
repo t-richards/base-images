@@ -24,6 +24,7 @@ $ ./script/build
 ## Notes
 
  - `tailscale-raspios`: A Raspberry Pi OS Lite image with Tailscale pre-installed.
+ - `adguard-raspios`: A Raspberry Pi OS Lite image with AdGuard Home pre-installed.
 
 ## License
 

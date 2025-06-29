@@ -2,6 +2,21 @@
 
 set -euo pipefail
 
-cd tailscale-raspios
+arg="${1:-tailscale}"
+
+case "$arg" in
+    tailscale)
+        dir="tailscale-raspios"
+        ;;
+    adguard)
+        dir="adguard-raspios"
+        ;;
+    *)
+        echo "Usage: $0 [tailscale|adguard]"
+        exit 1
+        ;;
+esac
+
+cd "$dir"
 packer init .
 PACKER_CONFIG_DIR=$HOME sudo -E packer build .
