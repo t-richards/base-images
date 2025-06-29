@@ -13,7 +13,7 @@ jobs:
       - name: Setup packer
         uses: hashicorp/setup-packer@main
         with:
-          version: 1.12.0
+          version: 1.13.1
 
       - name: Validate Packer HCL files
         run: packer fmt -check -recursive .

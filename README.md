@@ -10,8 +10,12 @@ This repository contains Packer templates for building Tom's custom OS images.
 ## Getting started
 
 ```sh-session
-# Build images.
-$ ./script/build
+# Show usage
+$ ./script/build --help
+Usage: ./script/build [tailscale|adguard]
+
+# Example: Build tailscale image
+$ ./script/build tailscale
 
 <snip>
 
